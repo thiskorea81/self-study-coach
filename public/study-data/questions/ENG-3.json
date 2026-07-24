@@ -202,5 +202,209 @@
     },
     "answer": "1",
     "explanation": "자랑스러움을 표현하는 말에는 그 감정에 공감하고 축하하는 응답이 자연스럽다."
+  },
+  {
+    "id": "q_eng3_201",
+    "standardId": "ENG-3",
+    "achievementCode": "9영03-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the passage and answer the question.\n\nOur school library will be closed for cleaning from July 20th to July 22nd. Please return all borrowed books before July 19th. We apologize for any inconvenience.\n\nQuestion: What is the purpose of this passage?",
+    "choices": {
+      "1": "To advertise a new library",
+      "2": "To inform students about the library closing",
+      "3": "To invite students to an event",
+      "4": "To complain about noise",
+      "5": "To ask for donations"
+    },
+    "answer": "2",
+    "explanation": "도서관이 청소를 위해 문을 닫는다는 사실과 책 반납 안내를 전하는 글이므로, 학생들에게 정보를 알리는 것이 목적이다."
+  },
+  {
+    "id": "q_eng3_202",
+    "standardId": "ENG-3",
+    "achievementCode": "9영03-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the passage and answer the question.\n\nAre you tired of boring lunches? Try our new sandwich shop near the school gate! Fresh ingredients, friendly service, and affordable prices. Come and see for yourself!\n\nQuestion: What is the purpose of this passage?",
+    "choices": {
+      "1": "To advertise a sandwich shop",
+      "2": "To complain about food",
+      "3": "To give directions",
+      "4": "To apologize for a mistake",
+      "5": "To report the weather"
+    },
+    "answer": "1",
+    "explanation": "새로운 샌드위치 가게의 장점을 홍보하며 방문을 권하는 글이므로 광고가 목적이다."
+  },
+  {
+    "id": "q_eng3_203",
+    "standardId": "ENG-3",
+    "achievementCode": "9영03-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the passage and answer the question.\n\nI am writing to say sorry for missing your birthday party last week. I was sick and couldn't leave home. I hope we can celebrate together soon.\n\nQuestion: What is the purpose of this passage?",
+    "choices": {
+      "1": "To invite someone to a party",
+      "2": "To apologize for missing an event",
+      "3": "To ask for a favor",
+      "4": "To give advice",
+      "5": "To advertise a product"
+    },
+    "answer": "2",
+    "explanation": "생일 파티에 못 간 것에 대해 사과하는 글이다."
+  },
+  {
+    "id": "q_eng3_204",
+    "standardId": "ENG-3",
+    "achievementCode": "9영03-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the passage and answer the question.\n\nPlease remember to bring your own water bottle and comfortable shoes for tomorrow's field trip. We will meet at the school gate at 9 a.m. sharp.\n\nQuestion: What is the purpose of this passage?",
+    "choices": {
+      "1": "To give instructions for a field trip",
+      "2": "To sell shoes",
+      "3": "To complain about the weather",
+      "4": "To describe a school",
+      "5": "To ask for money"
+    },
+    "answer": "1",
+    "explanation": "현장학습을 위해 준비물과 만나는 시간·장소를 안내하는 글이다."
+  },
+  {
+    "id": "q_eng3_205",
+    "standardId": "ENG-3",
+    "achievementCode": "9영03-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the passage and answer the question.\n\nStudies show that drinking enough water every day helps your body and brain work better. Doctors recommend drinking about eight glasses of water a day.\n\nQuestion: What is the purpose of this passage?",
+    "choices": {
+      "1": "To inform readers about the benefits of drinking water",
+      "2": "To sell bottled water",
+      "3": "To complain about thirst",
+      "4": "To invite readers to a contest",
+      "5": "To apologize for a mistake"
+    },
+    "answer": "1",
+    "explanation": "물을 마시는 것이 건강에 좋다는 정보를 전달하는 글이다."
+  },
+  {
+    "id": "q_eng3_206",
+    "standardId": "ENG-3",
+    "achievementCode": "9영03-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the passage and answer the question.\n\nI really enjoyed your presentation today. Your ideas were creative, and you explained everything clearly. Great job!\n\nQuestion: What is the purpose of this passage?",
+    "choices": {
+      "1": "To give a compliment",
+      "2": "To ask a question",
+      "3": "To give a warning",
+      "4": "To complain",
+      "5": "To sell something"
+    },
+    "answer": "1",
+    "explanation": "발표를 칭찬하는 글이므로 목적은 칭찬을 전하는 것이다."
+  },
+  {
+    "id": "q_eng3_207",
+    "standardId": "ENG-3",
+    "achievementCode": "9영03-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the passage and answer the question.\n\nWould you like to join our book club? We meet every Friday afternoon to talk about interesting books. New members are always welcome!\n\nQuestion: What is the purpose of this passage?",
+    "choices": {
+      "1": "To invite people to join a book club",
+      "2": "To sell books",
+      "3": "To complain about reading",
+      "4": "To apologize",
+      "5": "To give a warning"
+    },
+    "answer": "1",
+    "explanation": "독서 모임에 새 회원을 초대하는 글이다."
+  },
+  {
+    "id": "q_eng3_208",
+    "standardId": "ENG-3",
+    "achievementCode": "9영03-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the passage and answer the question.\n\nPlease be quiet in the museum. Loud talking or running can disturb other visitors and damage the exhibits.\n\nQuestion: What is the purpose of this passage?",
+    "choices": {
+      "1": "To ask visitors to follow museum rules",
+      "2": "To advertise the museum",
+      "3": "To describe the museum's history",
+      "4": "To sell tickets",
+      "5": "To thank the visitors"
+    },
+    "answer": "1",
+    "explanation": "박물관 관람 규칙(조용히 하기)을 안내하고 지켜 달라고 요청하는 글이다."
+  },
+  {
+    "id": "q_eng3_209",
+    "standardId": "ENG-3",
+    "achievementCode": "9영03-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the passage and answer the question.\n\nI know you worked really hard on the project, and I'm sorry it didn't win first place. Your effort was still amazing, and I'm proud of you.\n\nQuestion: What is the purpose of this passage?",
+    "choices": {
+      "1": "To comfort and encourage someone",
+      "2": "To criticize someone",
+      "3": "To advertise a contest",
+      "4": "To give directions",
+      "5": "To complain about the result"
+    },
+    "answer": "1",
+    "explanation": "상을 받지 못한 사람을 위로하고 격려하는 글이다."
+  },
+  {
+    "id": "q_eng3_210",
+    "standardId": "ENG-3",
+    "achievementCode": "9영03-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the passage and answer the question.\n\nDon't forget! The deadline for the writing contest is this Friday. Submit your essay to the school office before 4 p.m.\n\nQuestion: What is the purpose of this passage?",
+    "choices": {
+      "1": "To remind readers of a deadline",
+      "2": "To sell writing supplies",
+      "3": "To apologize for a delay",
+      "4": "To describe a school event's history",
+      "5": "To complain about writing"
+    },
+    "answer": "1",
+    "explanation": "글쓰기 대회 마감일을 다시 알려 주는 글이다."
+  },
+  {
+    "id": "q_eng3_211",
+    "standardId": "ENG-3",
+    "achievementCode": "9영03-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the passage and answer the question.\n\nThank you so much for helping me move my boxes last weekend. I really couldn't have done it without you.\n\nQuestion: What is the purpose of this passage?",
+    "choices": {
+      "1": "To express thanks",
+      "2": "To ask for more help",
+      "3": "To complain about the move",
+      "4": "To give a warning",
+      "5": "To advertise a moving company"
+    },
+    "answer": "1",
+    "explanation": "이사를 도와준 것에 대해 감사를 전하는 글이다."
+  },
+  {
+    "id": "q_eng3_212",
+    "standardId": "ENG-3",
+    "achievementCode": "9영03-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the passage and answer the question.\n\nWarning: The bridge ahead is under repair. Please use the other road until construction is finished next month.\n\nQuestion: What is the purpose of this passage?",
+    "choices": {
+      "1": "To warn people about road construction",
+      "2": "To advertise a new bridge",
+      "3": "To thank workers",
+      "4": "To invite people to a ceremony",
+      "5": "To complain about traffic"
+    },
+    "answer": "1",
+    "explanation": "다리 공사로 인해 다른 길을 이용하라고 경고·안내하는 글이다."
   }
 ]
