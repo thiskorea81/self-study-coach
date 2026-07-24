@@ -15,5 +15,133 @@
     "answer": "4",
     "explanation": "근과 계수의 관계에서 두 해의 합은 -b/a = 5.",
     "graph": { "type": "quadratic", "a": 1, "b": -5, "c": 6 }
+  },
+  {
+    "id": "q_kor1_1_001",
+    "standardId": "KOR-1-1",
+    "subject": "국어",
+    "type": "5지선다형",
+    "question": "다음 문장에서 【 】로 표시한 단어의 품사가 나머지 넷과 다른 하나는?",
+    "choices": {
+      "1": "하늘이 참 【맑다】.",
+      "2": "강물이 매우 【깨끗하다】.",
+      "3": "그는 【빠르게】 달렸다.",
+      "4": "아이가 【예쁘다】.",
+      "5": "날씨가 【따뜻하다】."
+    },
+    "answer": "3",
+    "explanation": "1, 2, 4, 5는 성질이나 상태를 나타내는 형용사이고, 3의 '빠르게'는 동사 '달렸다'를 꾸며 주는 부사이다."
+  },
+  {
+    "id": "q_kor1_2_001",
+    "standardId": "KOR-1-2",
+    "subject": "국어",
+    "type": "5지선다형",
+    "question": "다음 표현 중 비유법의 종류가 나머지 넷과 다른 하나는?",
+    "choices": {
+      "1": "내 마음은 호수요.",
+      "2": "그리움은 강물처럼 흐른다.",
+      "3": "시간은 화살과 같다.",
+      "4": "파도가 밀려오듯 슬픔이 밀려온다.",
+      "5": "인생은 나그네길과 같다."
+    },
+    "answer": "1",
+    "explanation": "2~5는 '처럼', '같다', '듯' 같은 연결어를 사용한 직유법이고, 1은 연결어 없이 원관념(내 마음)과 보조관념(호수)을 동일시한 은유법이다."
+  },
+  {
+    "id": "q_kor2_1_001",
+    "standardId": "KOR-2-1",
+    "subject": "국어",
+    "type": "5지선다형",
+    "question": "다음 중 홑문장인 것은?",
+    "choices": {
+      "1": "비가 오고 바람이 분다.",
+      "2": "나는 그가 오기를 기다렸다.",
+      "3": "하늘이 맑고 푸르다.",
+      "4": "동생이 숙제를 끝냈다.",
+      "5": "나는 밥을 먹고 학교에 갔다."
+    },
+    "answer": "4",
+    "explanation": "홑문장은 주어와 서술어의 관계가 한 번만 나타나는 문장이다. 1과 5는 두 문장이 이어진 겹문장, 2는 명사절을 안은 겹문장, 3은 서술어가 이어진 겹문장이다. 4만 주어와 서술어가 하나씩이다."
+  },
+  {
+    "id": "q_kor2_2_001",
+    "standardId": "KOR-2-2",
+    "subject": "국어",
+    "type": "5지선다형",
+    "question": "다음 중 맞춤법이 올바른 것은?",
+    "choices": {
+      "1": "오랫만에 만나서 반가웠다.",
+      "2": "그 이유가 왠지 궁금했다.",
+      "3": "며칠동안 집에 있었다.",
+      "4": "사과가 몇일 만에 다 익었다.",
+      "5": "어의없는 상황이었다."
+    },
+    "answer": "2",
+    "explanation": "'오랫만에'는 '오랜만에', '며칠동안'은 '며칠 동안'(띄어 씀), '몇일'은 '며칠', '어의없다'는 '어이없다'가 올바른 표기이다. '왠지'는 이미 올바른 표준어 표기이다."
+  },
+  {
+    "id": "q_kor3_1_001",
+    "standardId": "KOR-3-1",
+    "subject": "국어",
+    "type": "5지선다형",
+    "question": "습관은 반복된 행동이 자동화되는 과정에서 만들어진다. 처음에는 의식적으로 노력해야 하지만, 일정 기간 이상 반복하면 뇌는 그 행동을 별다른 노력 없이 수행하게 된다. 이 때문에 새로운 습관을 만들 때는 처음 며칠보다 꾸준함을 유지하는 것이 더 중요하다.\n\n위 글의 내용과 일치하지 않는 것은?",
+    "choices": {
+      "1": "습관은 반복을 통해 자동화된다.",
+      "2": "처음에는 의식적인 노력이 필요하다.",
+      "3": "습관 형성 초기에는 노력이 거의 필요 없다.",
+      "4": "뇌는 반복된 행동을 별다른 노력 없이 수행할 수 있게 된다.",
+      "5": "새로운 습관을 만들 때는 꾸준함이 중요하다."
+    },
+    "answer": "3",
+    "explanation": "지문에서 '처음에는 의식적으로 노력해야 한다'고 했으므로, 초기에 노력이 거의 필요 없다는 3번은 글의 내용과 일치하지 않는다."
+  },
+  {
+    "id": "q_eng1_001",
+    "standardId": "ENG-1",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the grammatically correct sentence.",
+    "choices": {
+      "1": "She go to school every day.",
+      "2": "She goes to school every day.",
+      "3": "She going to school every day.",
+      "4": "She is go to school every day.",
+      "5": "She gos to school every day."
+    },
+    "answer": "2",
+    "explanation": "주어가 3인칭 단수(She)이고 현재시제이므로 동사에 -es를 붙인 goes가 와야 한다."
+  },
+  {
+    "id": "q_eng2_001",
+    "standardId": "ENG-2",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the grammatically correct sentence.",
+    "choices": {
+      "1": "This book is more interesting than that one.",
+      "2": "This book is interestinger than that one.",
+      "3": "This book is the most interesting than that one.",
+      "4": "This book is more interestinger than that one.",
+      "5": "This book is interesting than that one."
+    },
+    "answer": "1",
+    "explanation": "2음절 이상인 형용사 interesting의 비교급은 more를 붙여 만든다. 'interestinger'처럼 -er을 붙이는 것은 잘못된 형태이다."
+  },
+  {
+    "id": "q_eng3_001",
+    "standardId": "ENG-3",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the correct relative pronoun for the blank.\n\nThe woman ___ lives next door is a doctor.",
+    "choices": {
+      "1": "which",
+      "2": "who",
+      "3": "whom",
+      "4": "whose",
+      "5": "what"
+    },
+    "answer": "2",
+    "explanation": "빈칸 뒤에 동사(lives)가 바로 이어지고 선행사가 사람(the woman)이므로 주격 관계대명사 who가 와야 한다."
   }
 ]
