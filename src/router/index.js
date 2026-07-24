@@ -4,6 +4,7 @@ import Onboarding from '../views/Onboarding.vue'
 import Dashboard from '../views/Dashboard.vue'
 import SubjectUnits from '../views/SubjectUnits.vue'
 import ProblemSolve from '../views/ProblemSolve.vue'
+import ExamPaper from '../views/ExamPaper.vue'
 import Settings from '../views/Settings.vue'
 
 const router = createRouter({
@@ -13,6 +14,7 @@ const router = createRouter({
     { path: '/', name: 'dashboard', component: Dashboard },
     { path: '/subjects/:subject', name: 'subject-units', component: SubjectUnits, props: true },
     { path: '/solve/:standardId', name: 'problem-solve', component: ProblemSolve, props: true },
+    { path: '/exam/:standardId', name: 'exam-paper', component: ExamPaper, props: true },
     { path: '/settings', name: 'settings', component: Settings },
   ],
 })
