@@ -11,19 +11,34 @@ function evaluate(x) {
   return null
 }
 
+// 격자 간격을 데이터 범위에 맞춰 1, 2, 5, 10... 중 정수 눈금만 나오는 간격으로 고른다.
+function niceStep(range) {
+  const raw = range / 6
+  const pow10 = 10 ** Math.floor(Math.log10(raw))
+  const candidates = [1, 2, 5, 10].map((m) => m * pow10)
+  const step = candidates.find((c) => c >= raw) ?? candidates[candidates.length - 1]
+  return Math.max(1, Math.round(step))
+}
+
 function draw() {
   const canvas = canvasRef.value
   if (!canvas) return
   const ctx = canvas.getContext('2d')
   const w = canvas.width
   const h = canvas.height
-  ctx.clearRect(0, 0, w, h)
+
+  ctx.fillStyle = '#ffffff'
+  ctx.fillRect(0, 0, w, h)
+
+  const margin = { left: 26, right: 8, top: 8, bottom: 18 }
+  const plotW = w - margin.left - margin.right
+  const plotH = h - margin.top - margin.bottom
 
   const xMin = -8
   const xMax = 8
   const samples = []
-  for (let px = 0; px <= w; px++) {
-    const x = xMin + (px / w) * (xMax - xMin)
+  for (let i = 0; i <= plotW; i++) {
+    const x = xMin + (i / plotW) * (xMax - xMin)
     const y = evaluate(x)
     if (y !== null && Number.isFinite(y)) samples.push({ x, y })
   }
@@ -32,37 +47,56 @@ function draw() {
   const ys = samples.map((s) => s.y)
   let yMin = Math.min(...ys, -1)
   let yMax = Math.max(...ys, 1)
-  const yPad = (yMax - yMin) * 0.1 || 1
+  const yPad = (yMax - yMin) * 0.15 || 1
   yMin -= yPad
   yMax += yPad
 
-  const toPx = (x) => ((x - xMin) / (xMax - xMin)) * w
-  const toPy = (y) => h - ((y - yMin) / (yMax - yMin)) * h
+  const toPx = (x) => margin.left + ((x - xMin) / (xMax - xMin)) * plotW
+  const toPy = (y) => margin.top + plotH - ((y - yMin) / (yMax - yMin)) * plotH
 
-  ctx.strokeStyle = '#e5e0d3'
+  const xStep = niceStep(xMax - xMin)
+  const yStep = niceStep(yMax - yMin)
+
+  ctx.font = '9px -apple-system, sans-serif'
+  ctx.fillStyle = '#9a8f7a'
+
+  // 세로 격자선 + x축 정수 눈금
+  ctx.strokeStyle = '#eee9db'
   ctx.lineWidth = 1
-  for (let gx = Math.ceil(xMin / 2) * 2; gx <= xMax; gx += 2) {
+  ctx.textAlign = 'center'
+  ctx.textBaseline = 'top'
+  for (let gx = Math.ceil(xMin / xStep) * xStep; gx <= xMax; gx += xStep) {
+    const px = toPx(gx)
     ctx.beginPath()
-    ctx.moveTo(toPx(gx), 0)
-    ctx.lineTo(toPx(gx), h)
+    ctx.moveTo(px, margin.top)
+    ctx.lineTo(px, margin.top + plotH)
     ctx.stroke()
-  }
-  for (let gy = Math.ceil(yMin / 2) * 2; gy <= yMax; gy += 2) {
-    ctx.beginPath()
-    ctx.moveTo(0, toPy(gy))
-    ctx.lineTo(w, toPy(gy))
-    ctx.stroke()
+    ctx.fillText(String(Math.round(gx)), px, margin.top + plotH + 3)
   }
 
+  // 가로 격자선 + y축 정수 눈금 (0은 x축 쪽에서 한 번만 표시)
+  ctx.textAlign = 'right'
+  ctx.textBaseline = 'middle'
+  for (let gy = Math.ceil(yMin / yStep) * yStep; gy <= yMax; gy += yStep) {
+    const py = toPy(gy)
+    ctx.beginPath()
+    ctx.moveTo(margin.left, py)
+    ctx.lineTo(margin.left + plotW, py)
+    ctx.stroke()
+    if (gy !== 0) ctx.fillText(String(Math.round(gy)), margin.left - 4, py)
+  }
+
+  // x축 / y축 본선
   ctx.strokeStyle = '#8a5716'
   ctx.lineWidth = 1.5
   ctx.beginPath()
-  ctx.moveTo(0, toPy(0))
-  ctx.lineTo(w, toPy(0))
-  ctx.moveTo(toPx(0), 0)
-  ctx.lineTo(toPx(0), h)
+  ctx.moveTo(margin.left, toPy(0))
+  ctx.lineTo(margin.left + plotW, toPy(0))
+  ctx.moveTo(toPx(0), margin.top)
+  ctx.lineTo(toPx(0), margin.top + plotH)
   ctx.stroke()
 
+  // 함수 곡선
   ctx.strokeStyle = '#a8641c'
   ctx.lineWidth = 2.5
   ctx.beginPath()
@@ -92,7 +126,7 @@ watch(() => props.graph, draw, { deep: true })
   max-width: 100%;
   border: 1px solid #d1d5db;
   border-radius: 6px;
-  background: white;
+  background: #ffffff;
   margin: 10px 0;
 }
 </style>
