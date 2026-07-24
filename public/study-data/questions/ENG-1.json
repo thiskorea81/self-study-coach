@@ -2,6 +2,7 @@
   {
     "id": "q_eng1_001",
     "standardId": "ENG-1",
+    "achievementCode": "9영02-05",
     "subject": "영어",
     "type": "5지선다형",
     "question": "Choose the best response for the blank.\n\nA: Hi, I'm Jimin. What's your name?\nB: ___________\nA: Nice to meet you, too!",
@@ -14,5 +15,192 @@
     },
     "answer": "2",
     "explanation": "이름을 묻는 질문(What's your name?)에는 자신의 이름을 말하며 인사를 건네는 표현이 이어져야 한다."
+  },
+  {
+    "id": "q_eng1_101",
+    "standardId": "ENG-1",
+    "achievementCode": "9영02-05",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: Hello! My name is Tom. What's your name?\nB: ___________\nA: Nice to meet you, Yuna!",
+    "choices": {
+      "1": "My name is Yuna.",
+      "2": "I am from Seoul.",
+      "3": "I like pizza.",
+      "4": "See you tomorrow.",
+      "5": "I am fine, thank you."
+    },
+    "answer": "1",
+    "explanation": "A가 자신의 이름을 말하고 B의 이름을 물었으므로, B는 자신의 이름을 말해야 한다."
+  },
+  {
+    "id": "q_eng1_102",
+    "standardId": "ENG-1",
+    "achievementCode": "9영02-05",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: Where are you from?\nB: ___________",
+    "choices": {
+      "1": "I am from Busan.",
+      "2": "I am ten years old.",
+      "3": "I like reading books.",
+      "4": "I have a sister.",
+      "5": "I am a student."
+    },
+    "answer": "1",
+    "explanation": "'Where are you from?'은 출신지를 묻는 질문이므로 출신지로 답해야 한다."
+  },
+  {
+    "id": "q_eng1_103",
+    "standardId": "ENG-1",
+    "achievementCode": "9영02-05",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: How old are you?\nB: ___________",
+    "choices": {
+      "1": "I am from Korea.",
+      "2": "I am thirteen years old.",
+      "3": "I like music.",
+      "4": "My name is Mina.",
+      "5": "I have two brothers."
+    },
+    "answer": "2",
+    "explanation": "'How old are you?'는 나이를 묻는 질문이므로 나이로 답해야 한다."
+  },
+  {
+    "id": "q_eng1_104",
+    "standardId": "ENG-1",
+    "achievementCode": "9영02-05",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best sentence to introduce yourself.",
+    "choices": {
+      "1": "He is my best friend.",
+      "2": "Hello, my name is Sujin and I am a middle school student.",
+      "3": "This is a book.",
+      "4": "They are playing soccer.",
+      "5": "It is raining today."
+    },
+    "answer": "2",
+    "explanation": "자기 자신을 소개하는 문장이므로 자신의 이름과 신분을 밝히는 2번이 가장 적절하다."
+  },
+  {
+    "id": "q_eng1_105",
+    "standardId": "ENG-1",
+    "achievementCode": "9영02-05",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: Do you have any brothers or sisters?\nB: ___________",
+    "choices": {
+      "1": "Yes, I have one younger brother.",
+      "2": "I am from Daegu.",
+      "3": "I like drawing.",
+      "4": "I am fine, thanks.",
+      "5": "I go to school by bus."
+    },
+    "answer": "1",
+    "explanation": "형제자매가 있는지 묻는 질문이므로 그에 대한 대답인 1번이 가장 적절하다."
+  },
+  {
+    "id": "q_eng1_106",
+    "standardId": "ENG-1",
+    "achievementCode": "9영02-05",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: What's your favorite subject?\nB: ___________",
+    "choices": {
+      "1": "My favorite subject is math.",
+      "2": "I have a dog.",
+      "3": "I am twelve years old.",
+      "4": "My name is Jiho.",
+      "5": "I live in Incheon."
+    },
+    "answer": "1",
+    "explanation": "좋아하는 과목을 묻는 질문이므로 과목으로 답하는 1번이 가장 적절하다."
+  },
+  {
+    "id": "q_eng1_107",
+    "standardId": "ENG-1",
+    "achievementCode": "9영02-05",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the correct sentence to greet someone for the first time.",
+    "choices": {
+      "1": "See you later!",
+      "2": "Nice to meet you.",
+      "3": "Goodbye.",
+      "4": "I am sorry.",
+      "5": "Excuse me."
+    },
+    "answer": "2",
+    "explanation": "누군가를 처음 만났을 때 하는 인사 표현은 'Nice to meet you.'이다."
+  },
+  {
+    "id": "q_eng1_108",
+    "standardId": "ENG-1",
+    "achievementCode": "9영02-05",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: Let me introduce myself. I'm Daniel from Canada.\nB: ___________",
+    "choices": {
+      "1": "Nice to meet you, Daniel!",
+      "2": "I am busy today.",
+      "3": "It is cold outside.",
+      "4": "I don't know him.",
+      "5": "That sounds boring."
+    },
+    "answer": "1",
+    "explanation": "상대방이 자기소개를 했으므로 반갑다는 인사로 답하는 것이 자연스럽다."
+  },
+  {
+    "id": "q_eng1_109",
+    "standardId": "ENG-1",
+    "achievementCode": "9영02-05",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: What do you do in your free time?\nB: ___________",
+    "choices": {
+      "1": "I usually play basketball.",
+      "2": "I am from Japan.",
+      "3": "I am fourteen.",
+      "4": "My school is big.",
+      "5": "I have a cat."
+    },
+    "answer": "1",
+    "explanation": "여가 시간에 무엇을 하는지 묻는 질문이므로 취미 활동으로 답하는 1번이 가장 적절하다."
+  },
+  {
+    "id": "q_eng1_110",
+    "standardId": "ENG-1",
+    "achievementCode": "9영02-05",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the grammatically correct sentence to introduce your family.",
+    "choices": {
+      "1": "This is my mother. She is a doctor.",
+      "2": "This are my mother. She is a doctor.",
+      "3": "This is my mother. She are a doctor.",
+      "4": "This is my mother. Her is a doctor.",
+      "5": "This is my mother. She a doctor."
+    },
+    "answer": "1",
+    "explanation": "단수 주어 'This'에는 'is'를, 3인칭 단수 'She'에도 'is'를 써야 한다. 나머지는 be동사나 대명사가 잘못 쓰였다."
+  },
+  {
+    "id": "q_eng1_111",
+    "standardId": "ENG-1",
+    "achievementCode": "9영02-05",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: Hi, I don't think we've met. What's your name?\nB: ___________",
+    "choices": {
+      "1": "I'm Yuna. What's yours?",
+      "2": "I am busy now.",
+      "3": "I like ice cream.",
+      "4": "It's sunny today.",
+      "5": "I go to bed at ten."
+    },
+    "answer": "1",
+    "explanation": "이름을 묻는 질문에는 자신의 이름을 말하고, 자연스럽게 상대의 이름도 되물을 수 있다."
   }
 ]
