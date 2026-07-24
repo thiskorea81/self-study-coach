@@ -20,6 +20,11 @@ const isCorrect = computed(() => submitted.value && selected.value === question.
 const standardTitle = computed(() =>
   standard.value ? `${standard.value.subject} · ${standard.value.grade} — ${standard.value.title}` : props.standardId,
 )
+const standardContext = computed(() => {
+  if (!standard.value) return standardTitle.value
+  const codes = (standard.value.achievementStandards ?? []).map((s) => `${s.code} ${s.name}`).join(' / ')
+  return codes ? `${standardTitle.value}\n관련 성취기준: ${codes}` : standardTitle.value
+})
 
 onMounted(async () => {
   const [questionsRes, standardsRes] = await Promise.all([
@@ -27,7 +32,8 @@ onMounted(async () => {
     fetch('/study-data/standards.json'),
   ])
   const all = await questionsRes.json()
-  question.value = all.find((q) => q.standardId === props.standardId) ?? null
+  const matches = all.filter((q) => q.standardId === props.standardId)
+  question.value = matches.length ? matches[Math.floor(Math.random() * matches.length)] : null
   const standards = await standardsRes.json()
   standard.value = standards.find((s) => s.id === props.standardId) ?? null
 })
@@ -57,7 +63,7 @@ async function runAdvice() {
     askAdvice({
       aiSettings: getAiSettings(),
       subject: question.value.subject,
-      standardTitle: standardTitle.value,
+      standardTitle: standardContext.value,
       recentAttempts: getAttempts().filter((a) => a.standardId === props.standardId),
     }),
   )
@@ -82,7 +88,7 @@ async function runSimilarQuestion() {
     similarQuestion.value = await generateSimilarQuestion({
       aiSettings: getAiSettings(),
       sourceQuestion: question.value,
-      standardTitle: standardTitle.value,
+      standardTitle: standardContext.value,
     })
   } catch (e) {
     aiError.value = e.message
@@ -109,6 +115,16 @@ async function withAi(_kind, run) {
   <section>
     <RouterLink to="/">← 대시보드</RouterLink>
     <h1>{{ standardTitle }}</h1>
+
+    <div v-if="standard?.summary" class="summary-box">
+      <h2>핵심 정리</h2>
+      <p>{{ standard.summary }}</p>
+      <ul v-if="standard.achievementStandards?.length" class="standards-list">
+        <li v-for="s in standard.achievementStandards" :key="s.code">
+          <code>{{ s.code }}</code> {{ s.name }}
+        </li>
+      </ul>
+    </div>
 
     <div v-if="!question" class="empty">
       아직 이 단원에는 자체 제작 문항이 없어요. <code>public/study-data/questions/</code>에 추가해 주세요.
@@ -161,6 +177,36 @@ async function withAi(_kind, run) {
 }
 .prompt {
   font-weight: 600;
+  white-space: pre-line;
+}
+.summary-box {
+  margin-top: 16px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  background: #f1ede1;
+  border: 1px solid #e2ddd0;
+}
+.summary-box h2 {
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #8a5716;
+  margin: 0 0 6px;
+}
+.summary-box p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+.standards-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  font-size: 0.82rem;
+  color: #6b7280;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 .choice {
   display: flex;
