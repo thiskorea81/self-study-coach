@@ -2,6 +2,7 @@
   {
     "id": "q_eng3_001",
     "standardId": "ENG-3",
+    "achievementCode": "9영02-02",
     "subject": "영어",
     "type": "5지선다형",
     "question": "Choose the best response for the blank.\n\nA: This cake tastes amazing! Did you make it?\nB: ___________",
@@ -14,5 +15,192 @@
     },
     "answer": "2",
     "explanation": "음식에 대한 칭찬에는 감사와 기쁨을 표현하는 응답이 자연스럽다."
+  },
+  {
+    "id": "q_eng3_101",
+    "standardId": "ENG-3",
+    "achievementCode": "9영02-02",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: How do you feel about the school trip next week?\nB: ___________",
+    "choices": {
+      "1": "I'm really excited about it.",
+      "2": "I went there last year.",
+      "3": "It is far from here.",
+      "4": "I have a ticket.",
+      "5": "The weather was nice."
+    },
+    "answer": "1",
+    "explanation": "감정을 묻는 질문(How do you feel ~?)에는 감정을 표현하는 대답이 이어져야 한다."
+  },
+  {
+    "id": "q_eng3_102",
+    "standardId": "ENG-3",
+    "achievementCode": "9영02-02",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: What do you think of this movie?\nB: ___________",
+    "choices": {
+      "1": "I think it's really interesting.",
+      "2": "I watched it yesterday.",
+      "3": "It started at 7 p.m.",
+      "4": "The theater is big.",
+      "5": "I bought two tickets."
+    },
+    "answer": "1",
+    "explanation": "의견을 묻는 질문(What do you think of ~?)에는 자신의 의견을 말하는 대답이 이어져야 한다."
+  },
+  {
+    "id": "q_eng3_103",
+    "standardId": "ENG-3",
+    "achievementCode": "9영02-02",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: I'm a little worried about the math test tomorrow.\nB: ___________",
+    "choices": {
+      "1": "Don't worry, you'll do great.",
+      "2": "I like math class.",
+      "3": "The test was easy.",
+      "4": "I have a pencil.",
+      "5": "See you tomorrow."
+    },
+    "answer": "1",
+    "explanation": "걱정을 표현하는 말에는 위로하거나 안심시키는 응답이 자연스럽다."
+  },
+  {
+    "id": "q_eng3_104",
+    "standardId": "ENG-3",
+    "achievementCode": "9영02-02",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: I'm so disappointed. My team lost the game.\nB: ___________",
+    "choices": {
+      "1": "I'm sorry to hear that.",
+      "2": "Congratulations!",
+      "3": "That's great news!",
+      "4": "I don't care.",
+      "5": "I'm so happy for you."
+    },
+    "answer": "1",
+    "explanation": "실망스러운 감정을 표현하는 말에는 위로하는 응답이 자연스럽다."
+  },
+  {
+    "id": "q_eng3_105",
+    "standardId": "ENG-3",
+    "achievementCode": "9영02-02",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: What do you think about wearing school uniforms?\nB: ___________",
+    "choices": {
+      "1": "I think uniforms make mornings easier.",
+      "2": "I woke up at seven.",
+      "3": "My school is near the station.",
+      "4": "I have three classes today.",
+      "5": "The weather is cold today."
+    },
+    "answer": "1",
+    "explanation": "의견을 묻는 질문이므로 교복에 대한 자신의 생각을 말하는 1번이 가장 적절하다."
+  },
+  {
+    "id": "q_eng3_106",
+    "standardId": "ENG-3",
+    "achievementCode": "9영02-02",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: I can't believe I passed the exam!\nB: ___________",
+    "choices": {
+      "1": "Congratulations! I'm so proud of you.",
+      "2": "I'm sorry about that.",
+      "3": "That's too bad.",
+      "4": "I don't believe you.",
+      "5": "It doesn't matter."
+    },
+    "answer": "1",
+    "explanation": "기쁜 소식을 전하는 말에는 축하하는 응답이 자연스럽다."
+  },
+  {
+    "id": "q_eng3_107",
+    "standardId": "ENG-3",
+    "achievementCode": "9영02-02",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the correct sentence to express your opinion.",
+    "choices": {
+      "1": "I think reading books is very helpful.",
+      "2": "He reads books every day.",
+      "3": "She read a book yesterday.",
+      "4": "They are reading now.",
+      "5": "The book is on the table."
+    },
+    "answer": "1",
+    "explanation": "'I think ~'는 자신의 의견을 표현하는 대표적인 문형이다. 나머지는 단순한 사실 진술이다."
+  },
+  {
+    "id": "q_eng3_108",
+    "standardId": "ENG-3",
+    "achievementCode": "9영02-02",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: I'm really nervous about my speech tomorrow.\nB: ___________",
+    "choices": {
+      "1": "You'll do fine. Just practice a little more.",
+      "2": "I love giving speeches.",
+      "3": "The speech was long.",
+      "4": "I gave a speech yesterday.",
+      "5": "The topic is history."
+    },
+    "answer": "1",
+    "explanation": "긴장된다는 감정 표현에는 격려하는 응답이 자연스럽다."
+  },
+  {
+    "id": "q_eng3_109",
+    "standardId": "ENG-3",
+    "achievementCode": "9영02-02",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: I love this song! What do you think?\nB: ___________",
+    "choices": {
+      "1": "I like it too. The melody is great.",
+      "2": "I bought a new phone.",
+      "3": "The concert is next week.",
+      "4": "I don't have any songs.",
+      "5": "It's raining outside."
+    },
+    "answer": "1",
+    "explanation": "노래에 대한 의견을 묻는 질문이므로 자신의 의견을 말하는 1번이 가장 적절하다."
+  },
+  {
+    "id": "q_eng3_110",
+    "standardId": "ENG-3",
+    "achievementCode": "9영02-02",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: I don't agree with your opinion about the movie.\nB: ___________",
+    "choices": {
+      "1": "That's okay, we can have different opinions.",
+      "2": "I bought the tickets already.",
+      "3": "The movie starts at 8.",
+      "4": "I watched it twice.",
+      "5": "It was very long."
+    },
+    "answer": "1",
+    "explanation": "의견이 다르다는 말에는 서로 다른 생각을 존중하는 응답이 자연스럽다."
+  },
+  {
+    "id": "q_eng3_111",
+    "standardId": "ENG-3",
+    "achievementCode": "9영02-02",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: I'm feeling really proud of myself for finishing the marathon.\nB: ___________",
+    "choices": {
+      "1": "That's amazing! You should be proud.",
+      "2": "I ran yesterday too.",
+      "3": "The marathon is 42 kilometers.",
+      "4": "I don't like running.",
+      "5": "It was rainy that day."
+    },
+    "answer": "1",
+    "explanation": "자랑스러움을 표현하는 말에는 그 감정에 공감하고 축하하는 응답이 자연스럽다."
   }
 ]
