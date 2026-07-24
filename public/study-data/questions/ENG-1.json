@@ -202,5 +202,149 @@
     },
     "answer": "1",
     "explanation": "이름을 묻는 질문에는 자신의 이름을 말하고, 자연스럽게 상대의 이름도 되물을 수 있다."
+  },
+  {
+    "id": "q_eng1_201",
+    "standardId": "ENG-1",
+    "achievementCode": "9영01-02",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: What time does the movie start?\nB: It starts at 3 o'clock.\nA: Great, let's meet at 2:30 then.\n\nQuestion: What time will A and B meet?",
+    "choices": { "1": "2:00", "2": "2:30", "3": "3:00", "4": "3:30", "5": "4:00" },
+    "answer": "2",
+    "explanation": "A가 'let's meet at 2:30'이라고 했으므로 두 사람은 2시 30분에 만나기로 했다."
+  },
+  {
+    "id": "q_eng1_202",
+    "standardId": "ENG-1",
+    "achievementCode": "9영01-02",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: How many pencils do you have?\nB: I have five pencils, but two of them are broken.\n\nQuestion: How many pencils are NOT broken?",
+    "choices": { "1": "2", "2": "3", "3": "5", "4": "7", "5": "0" },
+    "answer": "2",
+    "explanation": "연필 5개 중 2개가 부러졌다고 했으므로, 부러지지 않은 연필은 5-2=3개이다."
+  },
+  {
+    "id": "q_eng1_203",
+    "standardId": "ENG-1",
+    "achievementCode": "9영01-02",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: Where did you put my bag?\nB: I put it on the chair next to the door.\n\nQuestion: Where is the bag?",
+    "choices": {
+      "1": "On the table",
+      "2": "Under the bed",
+      "3": "In the closet",
+      "4": "On the chair next to the door",
+      "5": "On the floor"
+    },
+    "answer": "4",
+    "explanation": "B가 가방을 문 옆 의자 위에 두었다고 말했다."
+  },
+  {
+    "id": "q_eng1_204",
+    "standardId": "ENG-1",
+    "achievementCode": "9영01-02",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: What did you have for breakfast?\nB: I had toast and milk. I didn't have time to cook eggs.\n\nQuestion: What did B NOT eat for breakfast?",
+    "choices": { "1": "Toast", "2": "Milk", "3": "Eggs", "4": "Bread", "5": "Cereal" },
+    "answer": "3",
+    "explanation": "B는 계란을 요리할 시간이 없었다고 했으므로 계란은 먹지 않았다."
+  },
+  {
+    "id": "q_eng1_205",
+    "standardId": "ENG-1",
+    "achievementCode": "9영01-02",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: When is your birthday?\nB: It's on June 5th. What about yours?\nA: Mine is on July 12th.\n\nQuestion: When is A's birthday?",
+    "choices": { "1": "June 5th", "2": "June 12th", "3": "July 5th", "4": "July 12th", "5": "August 12th" },
+    "answer": "4",
+    "explanation": "A가 자신의 생일은 7월 12일이라고 말했다."
+  },
+  {
+    "id": "q_eng1_206",
+    "standardId": "ENG-1",
+    "achievementCode": "9영01-02",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: Who is that boy standing near the door?\nB: That's my cousin, Minho. He came to visit us this weekend.\n\nQuestion: Who is Minho?",
+    "choices": { "1": "B's teacher", "2": "B's cousin", "3": "B's brother", "4": "A's cousin", "5": "A's friend" },
+    "answer": "2",
+    "explanation": "B가 '내 사촌 민호'라고 소개했다."
+  },
+  {
+    "id": "q_eng1_207",
+    "standardId": "ENG-1",
+    "achievementCode": "9영01-02",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: How was the weather yesterday?\nB: It was sunny in the morning, but it started raining in the afternoon.\n\nQuestion: What was the weather like in the afternoon?",
+    "choices": { "1": "Sunny", "2": "Snowy", "3": "Rainy", "4": "Windy", "5": "Cloudy" },
+    "answer": "3",
+    "explanation": "오후에 비가 오기 시작했다고 했으므로 오후 날씨는 비였다."
+  },
+  {
+    "id": "q_eng1_208",
+    "standardId": "ENG-1",
+    "achievementCode": "9영01-02",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: I heard you got a new pet.\nB: Yes! I got a small dog last week. His name is Max.\n\nQuestion: What kind of pet did B get?",
+    "choices": { "1": "A cat", "2": "A dog", "3": "A bird", "4": "A fish", "5": "A rabbit" },
+    "answer": "2",
+    "explanation": "B가 작은 강아지(a small dog)를 얻었다고 말했다."
+  },
+  {
+    "id": "q_eng1_209",
+    "standardId": "ENG-1",
+    "achievementCode": "9영01-02",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: How long does it take to get to school?\nB: It usually takes 20 minutes by bus, but only 10 minutes by bike.\n\nQuestion: How long does it take by bike?",
+    "choices": { "1": "5 minutes", "2": "10 minutes", "3": "15 minutes", "4": "20 minutes", "5": "30 minutes" },
+    "answer": "2",
+    "explanation": "자전거로는 10분이 걸린다고 했다."
+  },
+  {
+    "id": "q_eng1_210",
+    "standardId": "ENG-1",
+    "achievementCode": "9영01-02",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: Did you finish your homework?\nB: I finished my math homework, but I still need to do my science project.\n\nQuestion: What does B still need to do?",
+    "choices": {
+      "1": "Math homework",
+      "2": "Science project",
+      "3": "English essay",
+      "4": "History report",
+      "5": "Art project"
+    },
+    "answer": "2",
+    "explanation": "B는 수학 숙제는 끝냈지만 과학 프로젝트는 아직 해야 한다고 말했다."
+  },
+  {
+    "id": "q_eng1_211",
+    "standardId": "ENG-1",
+    "achievementCode": "9영01-02",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: What time does the library close?\nB: It closes at 6 p.m. on weekdays, but at 5 p.m. on weekends.\n\nQuestion: What time does the library close on Saturday?",
+    "choices": { "1": "5 p.m.", "2": "6 p.m.", "3": "7 p.m.", "4": "4 p.m.", "5": "8 p.m." },
+    "answer": "1",
+    "explanation": "토요일은 주말이므로 오후 5시에 닫는다."
+  },
+  {
+    "id": "q_eng1_212",
+    "standardId": "ENG-1",
+    "achievementCode": "9영01-02",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: Where are you going this summer?\nB: My family and I are going to Jeju Island. We're staying for four days.\n\nQuestion: How long will B stay in Jeju Island?",
+    "choices": { "1": "Two days", "2": "Three days", "3": "Four days", "4": "Five days", "5": "One week" },
+    "answer": "3",
+    "explanation": "B는 4일 동안 머물 것이라고 말했다."
   }
 ]
