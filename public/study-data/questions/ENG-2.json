@@ -2,6 +2,7 @@
   {
     "id": "q_eng2_001",
     "standardId": "ENG-2",
+    "achievementCode": "9영02-08",
     "subject": "영어",
     "type": "5지선다형",
     "question": "Choose the sentence that has the same meaning as the underlined part.\n\nA: Would you like to join us for lunch?\nB: Sure, I'd love to.",
@@ -14,5 +15,192 @@
     },
     "answer": "1",
     "explanation": "'Would you like to ~?'는 상대방에게 무언가를 제안하는 표현으로 'Do you want to ~?'와 바꿔 쓸 수 있다."
+  },
+  {
+    "id": "q_eng2_101",
+    "standardId": "ENG-2",
+    "achievementCode": "9영02-08",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: What did you do last weekend?\nB: ___________",
+    "choices": {
+      "1": "I go to school every day.",
+      "2": "I visited my grandparents.",
+      "3": "I am going to the park now.",
+      "4": "I like weekends.",
+      "5": "I will clean my room."
+    },
+    "answer": "2",
+    "explanation": "지난 주말에 한 일을 묻는 질문이므로 과거시제로 경험을 답하는 2번이 가장 적절하다."
+  },
+  {
+    "id": "q_eng2_102",
+    "standardId": "ENG-2",
+    "achievementCode": "9영02-08",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: What are you going to do this weekend?\nB: ___________",
+    "choices": {
+      "1": "I watched a movie yesterday.",
+      "2": "I am going to visit my cousin.",
+      "3": "I like reading books.",
+      "4": "I have a pet dog.",
+      "5": "I am from Seoul."
+    },
+    "answer": "2",
+    "explanation": "이번 주말 계획을 묻는 질문이므로 'be going to'를 사용해 계획을 답하는 2번이 가장 적절하다."
+  },
+  {
+    "id": "q_eng2_103",
+    "standardId": "ENG-2",
+    "achievementCode": "9영02-08",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: Have you ever been to Jeju Island?\nB: ___________",
+    "choices": {
+      "1": "Yes, I have been there twice.",
+      "2": "I am going to school.",
+      "3": "I like apples.",
+      "4": "I am ten years old.",
+      "5": "I will go there tomorrow."
+    },
+    "answer": "1",
+    "explanation": "경험을 묻는 'Have you ever ~?'에는 현재완료로 경험 여부를 답하는 것이 자연스럽다."
+  },
+  {
+    "id": "q_eng2_104",
+    "standardId": "ENG-2",
+    "achievementCode": "9영02-08",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: What are your plans for the summer vacation?\nB: ___________",
+    "choices": {
+      "1": "I plan to learn swimming.",
+      "2": "I finished my homework yesterday.",
+      "3": "I am from Busan.",
+      "4": "I have a brother.",
+      "5": "I like math class."
+    },
+    "answer": "1",
+    "explanation": "여름방학 계획을 묻는 질문이므로 계획을 말하는 1번이 가장 적절하다."
+  },
+  {
+    "id": "q_eng2_105",
+    "standardId": "ENG-2",
+    "achievementCode": "9영02-08",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: Did you go anywhere special last vacation?\nB: ___________",
+    "choices": {
+      "1": "I will go to the beach next year.",
+      "2": "Yes, I went to my uncle's farm.",
+      "3": "I am going to school now.",
+      "4": "I usually wake up early.",
+      "5": "I like the beach."
+    },
+    "answer": "2",
+    "explanation": "지난 방학에 어딘가 다녀왔는지 묻는 질문이므로 과거시제로 경험을 답하는 2번이 가장 적절하다."
+  },
+  {
+    "id": "q_eng2_106",
+    "standardId": "ENG-2",
+    "achievementCode": "9영02-08",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: How was your trip to Busan?\nB: ___________",
+    "choices": {
+      "1": "It was really fun and relaxing.",
+      "2": "I am going there tomorrow.",
+      "3": "I will plan a trip soon.",
+      "4": "I have never been there.",
+      "5": "I go there every week."
+    },
+    "answer": "1",
+    "explanation": "지난 여행이 어땠는지 묻는 질문이므로 과거의 느낌을 말하는 1번이 가장 적절하다."
+  },
+  {
+    "id": "q_eng2_107",
+    "standardId": "ENG-2",
+    "achievementCode": "9영02-08",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: What time are you leaving for the trip?\nB: ___________",
+    "choices": {
+      "1": "I am leaving at 9 in the morning.",
+      "2": "I visited there last year.",
+      "3": "I like traveling.",
+      "4": "It was a long trip.",
+      "5": "I have a suitcase."
+    },
+    "answer": "1",
+    "explanation": "여행을 떠나는 시간을 묻는 질문이므로 구체적인 시간으로 답하는 1번이 가장 적절하다."
+  },
+  {
+    "id": "q_eng2_108",
+    "standardId": "ENG-2",
+    "achievementCode": "9영02-08",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the correct sentence about a future plan.",
+    "choices": {
+      "1": "I am going to join the school band next year.",
+      "2": "I joined the school band last year.",
+      "3": "I join the school band every day.",
+      "4": "I have joined the school band before.",
+      "5": "I was joining the school band."
+    },
+    "answer": "1",
+    "explanation": "미래의 계획을 나타낼 때는 'be going to + 동사원형'을 쓴다. 나머지는 과거, 현재, 경험, 과거진행을 나타낸다."
+  },
+  {
+    "id": "q_eng2_109",
+    "standardId": "ENG-2",
+    "achievementCode": "9영02-08",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: Have you ever tried Vietnamese food?\nB: ___________",
+    "choices": {
+      "1": "No, I have never tried it.",
+      "2": "I am going to the market.",
+      "3": "I like Korean food best.",
+      "4": "I ate breakfast this morning.",
+      "5": "I will cook dinner tonight."
+    },
+    "answer": "1",
+    "explanation": "경험을 묻는 질문에는 현재완료를 사용해 경험 여부를 답하는 것이 자연스럽다."
+  },
+  {
+    "id": "q_eng2_110",
+    "standardId": "ENG-2",
+    "achievementCode": "9영02-08",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: What did you do during the winter break?\nB: ___________",
+    "choices": {
+      "1": "I am going to travel next winter.",
+      "2": "I stayed home and read many books.",
+      "3": "I like winter more than summer.",
+      "4": "I will build a snowman.",
+      "5": "Winter is very cold."
+    },
+    "answer": "2",
+    "explanation": "겨울방학 동안 한 일을 묻는 질문이므로 과거시제로 경험을 답하는 2번이 가장 적절하다."
+  },
+  {
+    "id": "q_eng2_111",
+    "standardId": "ENG-2",
+    "achievementCode": "9영02-08",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: Are you going to join the science club next semester?\nB: ___________",
+    "choices": {
+      "1": "Yes, I am planning to join it.",
+      "2": "I joined the art club last year.",
+      "3": "I like science class.",
+      "4": "I have a science test tomorrow.",
+      "5": "Science is my favorite subject."
+    },
+    "answer": "1",
+    "explanation": "다음 학기 계획을 묻는 질문이므로 계획을 말하는 1번이 가장 적절하다."
   }
 ]
