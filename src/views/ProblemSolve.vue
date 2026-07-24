@@ -2,10 +2,13 @@
 import { ref, onMounted, computed } from 'vue'
 import { getAiSettings, addAttempt, addWrongNote, getAttempts, getWrongNotes } from '../lib/storage'
 import { askAdvice, generateSimilarQuestion, buildWeaknessReport } from '../lib/aiProviders'
+import { formatMathText } from '../lib/mathText'
+import FunctionGraph from '../components/FunctionGraph.vue'
 
 const props = defineProps({ standardId: String })
 
 const question = ref(null)
+const standard = ref(null)
 const selected = ref(null)
 const submitted = ref(false)
 const aiText = ref('')
@@ -14,11 +17,19 @@ const aiError = ref('')
 const similarQuestion = ref(null)
 
 const isCorrect = computed(() => submitted.value && selected.value === question.value?.answer)
+const standardTitle = computed(() =>
+  standard.value ? `${standard.value.subject} · ${standard.value.grade} — ${standard.value.title}` : props.standardId,
+)
 
 onMounted(async () => {
-  const res = await fetch('/study-data/questions/sample.json')
-  const all = await res.json()
+  const [questionsRes, standardsRes] = await Promise.all([
+    fetch('/study-data/questions/sample.json'),
+    fetch('/study-data/standards.json'),
+  ])
+  const all = await questionsRes.json()
   question.value = all.find((q) => q.standardId === props.standardId) ?? null
+  const standards = await standardsRes.json()
+  standard.value = standards.find((s) => s.id === props.standardId) ?? null
 })
 
 function submit() {
@@ -46,7 +57,7 @@ async function runAdvice() {
     askAdvice({
       aiSettings: getAiSettings(),
       subject: question.value.subject,
-      standardTitle: props.standardId,
+      standardTitle: standardTitle.value,
       recentAttempts: getAttempts().filter((a) => a.standardId === props.standardId),
     }),
   )
@@ -71,6 +82,7 @@ async function runSimilarQuestion() {
     similarQuestion.value = await generateSimilarQuestion({
       aiSettings: getAiSettings(),
       sourceQuestion: question.value,
+      standardTitle: standardTitle.value,
     })
   } catch (e) {
     aiError.value = e.message
@@ -96,23 +108,24 @@ async function withAi(_kind, run) {
 <template>
   <section>
     <RouterLink to="/">← 대시보드</RouterLink>
-    <h1>{{ standardId }}</h1>
+    <h1>{{ standardTitle }}</h1>
 
     <div v-if="!question" class="empty">
       아직 이 단원에는 자체 제작 문항이 없어요. <code>public/study-data/questions/</code>에 추가해 주세요.
     </div>
 
     <div v-else class="question">
-      <p class="prompt">{{ question.question }}</p>
+      <p class="prompt">{{ formatMathText(question.question) }}</p>
+      <FunctionGraph v-if="question.graph" :graph="question.graph" />
       <label v-for="(text, key) in question.choices" :key="key" class="choice">
         <input type="radio" :value="key" v-model="selected" :disabled="submitted" />
-        {{ key }}. {{ text }}
+        {{ key }}. {{ formatMathText(text) }}
       </label>
       <button v-if="!submitted" :disabled="!selected" @click="submit">제출</button>
 
       <div v-if="submitted" class="result" :class="{ correct: isCorrect, wrong: !isCorrect }">
         <p>{{ isCorrect ? '정답이에요!' : `오답이에요. 정답은 ${question.answer}번.` }}</p>
-        <p class="explanation">{{ question.explanation }}</p>
+        <p class="explanation">{{ formatMathText(question.explanation) }}</p>
 
         <div class="ai-actions">
           <button @click="runAdvice" :disabled="aiBusy">AI 조언 받기</button>
@@ -122,13 +135,16 @@ async function withAi(_kind, run) {
 
         <p v-if="aiBusy" class="muted">AI 응답을 기다리는 중...</p>
         <p v-if="aiError" class="error">{{ aiError }}</p>
-        <p v-if="aiText" class="ai-text">{{ aiText }}</p>
+        <p v-if="aiText" class="ai-text">{{ formatMathText(aiText) }}</p>
 
         <div v-if="similarQuestion" class="similar">
           <h3>생성된 유사 문항</h3>
-          <p>{{ similarQuestion.question }}</p>
+          <p>{{ formatMathText(similarQuestion.question) }}</p>
+          <FunctionGraph v-if="similarQuestion.graph" :graph="similarQuestion.graph" />
           <ul>
-            <li v-for="(text, key) in similarQuestion.choices" :key="key">{{ key }}. {{ text }}</li>
+            <li v-for="(text, key) in similarQuestion.choices" :key="key">
+              {{ key }}. {{ formatMathText(text) }}
+            </li>
           </ul>
         </div>
       </div>

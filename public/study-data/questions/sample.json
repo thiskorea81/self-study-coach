@@ -4,7 +4,7 @@
     "standardId": "MTH-3",
     "subject": "수학",
     "type": "5지선다형",
-    "question": "이차방정식 x^2 - 5x + 6 = 0 의 두 해의 합은?",
+    "question": "이차방정식 x² - 5x + 6 = 0 의 두 해의 합은?",
     "choices": {
       "1": "-5",
       "2": "-1",
@@ -13,6 +13,7 @@
       "5": "6"
     },
     "answer": "4",
-    "explanation": "근과 계수의 관계에서 두 해의 합은 -b/a = 5."
+    "explanation": "근과 계수의 관계에서 두 해의 합은 -b/a = 5.",
+    "graph": { "type": "quadratic", "a": 1, "b": -5, "c": 6 }
   }
 ]

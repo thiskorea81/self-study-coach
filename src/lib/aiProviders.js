@@ -6,6 +6,12 @@ const DEFAULT_MODELS = {
   claude: 'claude-haiku-4-5-20251001',
 }
 
+const CURRICULUM_CONTEXT =
+  '이 학생은 2015 개정 교육과정을 적용받는 중학교 3학년이다. 2015 개정 교육과정 범위를 벗어나는 내용(예: 2022 개정에서 추가되거나 이동된 단원, 고등학교 과정)은 언급하지 않는다.'
+
+const MATH_NOTATION_RULE =
+  '수식에서 거듭제곱을 쓸 때 "^2"처럼 캐럿(^)으로 쓰지 말고, 실제 위첨자 문자(², ³, ⁴ 등)를 그대로 사용한다.'
+
 async function callGemini({ apiKey, model, systemPrompt, userPrompt }) {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`
   const res = await fetch(url, {
@@ -96,24 +102,28 @@ async function callAi({ aiSettings, systemPrompt, userPrompt, kind }) {
 }
 
 export async function askAdvice({ aiSettings, subject, standardTitle, recentAttempts }) {
-  const systemPrompt =
-    '너는 중학생의 항공과학고 2차 시험(국어/영어/수학) 준비를 돕는 학습 코치다. 짧고 구체적인 한국어로 답한다.'
+  const systemPrompt = `너는 항공과학고 2차 시험(국어/영어/수학) 준비를 돕는 학습 코치다. ${CURRICULUM_CONTEXT} ${MATH_NOTATION_RULE} 짧고 구체적인 한국어로 답한다.`
   const stats = summarizeAttempts(recentAttempts)
   const userPrompt = `과목: ${subject}\n단원: ${standardTitle}\n최근 풀이 통계: ${stats}\n이 학생에게 지금 필요한 학습 조언을 3문장 이내로 알려줘.`
   return callAi({ aiSettings, systemPrompt, userPrompt, kind: 'advice' })
 }
 
-export async function generateSimilarQuestion({ aiSettings, sourceQuestion }) {
-  const systemPrompt =
-    '너는 중학교 시험 문제를 만드는 출제자다. 반드시 JSON만 출력하고 다른 텍스트는 쓰지 않는다.'
-  const userPrompt = `아래 문항과 같은 형식(같은 필드: id, standardId, subject, type, question, choices, answer, explanation)으로, 같은 단원·같은 난이도의 새 문항 1개를 JSON으로 만들어줘. 원문항을 그대로 베끼지 말고 숫자나 조건을 바꿔줘.\n\n원문항: ${JSON.stringify(sourceQuestion)}`
+export async function generateSimilarQuestion({ aiSettings, sourceQuestion, standardTitle }) {
+  const systemPrompt = `너는 중학교 시험 문제를 만드는 출제자다. ${CURRICULUM_CONTEXT} ${MATH_NOTATION_RULE} 반드시 JSON만 출력하고 다른 텍스트는 쓰지 않는다.`
+  const userPrompt = `아래 문항과 같은 형식(같은 필드: id, standardId, subject, type, question, choices, answer, explanation)으로, "${standardTitle}" 단원·같은 난이도의 새 문항 1개를 JSON으로 만들어줘. 원문항을 그대로 베끼지 말고 숫자나 조건을 바꿔줘.
+
+이차함수나 일차함수 그래프가 문제를 이해하는 데 도움이 되는 경우에만, 아래 형식으로 "graph" 필드를 추가해라. 필요 없으면 graph 필드를 넣지 마라.
+- 이차함수(y = ax² + bx + c): {"type":"quadratic","a":숫자,"b":숫자,"c":숫자}
+- 일차함수(y = mx + b): {"type":"linear","m":숫자,"b":숫자}
+graph 필드에는 반드시 숫자만 쓰고, 수식 문자열이나 다른 형식은 쓰지 마라.
+
+원문항: ${JSON.stringify(sourceQuestion)}`
   const text = await callAi({ aiSettings, systemPrompt, userPrompt, kind: 'similar-question' })
   return parseQuestionJson(text)
 }
 
 export async function buildWeaknessReport({ aiSettings, subject, attempts, wrongNotes }) {
-  const systemPrompt =
-    '너는 중학생의 시험 대비 약점을 진단하는 코치다. 통계를 근거로 다음에 무엇을 공부해야 하는지 구체적으로 짧게 말한다.'
+  const systemPrompt = `너는 시험 대비 약점을 진단하는 코치다. ${CURRICULUM_CONTEXT} 통계를 근거로 다음에 무엇을 공부해야 하는지 구체적으로 짧게 말한다.`
   const stats = summarizeAttempts(attempts)
   const userPrompt = `과목: ${subject}\n전체 풀이 통계: ${stats}\n오답 개수: ${wrongNotes.length}\n이 학생의 약점과 다음 학습 방향을 3~4문장으로 진단해줘.`
   return callAi({ aiSettings, systemPrompt, userPrompt, kind: 'weakness-report' })
@@ -132,5 +142,18 @@ function parseQuestionJson(text) {
   if (!parsed.question || !parsed.choices || !parsed.answer) {
     throw new Error('생성된 문항에 필수 필드가 없습니다.')
   }
+  if (parsed.graph && !isValidGraph(parsed.graph)) {
+    delete parsed.graph
+  }
   return parsed
+}
+
+function isValidGraph(graph) {
+  if (graph.type === 'quadratic') {
+    return [graph.a, graph.b, graph.c].every((n) => typeof n === 'number' && Number.isFinite(n))
+  }
+  if (graph.type === 'linear') {
+    return [graph.m, graph.b].every((n) => typeof n === 'number' && Number.isFinite(n))
+  }
+  return false
 }
