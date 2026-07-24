@@ -28,11 +28,10 @@ const standardContext = computed(() => {
 
 onMounted(async () => {
   const [questionsRes, standardsRes] = await Promise.all([
-    fetch('/study-data/questions/sample.json'),
+    fetch(`/study-data/questions/${props.standardId}.json`),
     fetch('/study-data/standards.json'),
   ])
-  const all = await questionsRes.json()
-  const matches = all.filter((q) => q.standardId === props.standardId)
+  const matches = questionsRes.ok ? await questionsRes.json() : []
   question.value = matches.length ? matches[Math.floor(Math.random() * matches.length)] : null
   const standards = await standardsRes.json()
   standard.value = standards.find((s) => s.id === props.standardId) ?? null

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "q_eng2_001",
+    "standardId": "ENG-2",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the sentence that has the same meaning as the underlined part.\n\nA: Would you like to join us for lunch?\nB: Sure, I'd love to.",
+    "choices": {
+      "1": "Do you want to have lunch with us?",
+      "2": "Did you have lunch?",
+      "3": "Where do you want to eat?",
+      "4": "I don't like lunch.",
+      "5": "Can you cook lunch?"
+    },
+    "answer": "1",
+    "explanation": "'Would you like to ~?'는 상대방에게 무언가를 제안하는 표현으로 'Do you want to ~?'와 바꿔 쓸 수 있다."
+  }
+]

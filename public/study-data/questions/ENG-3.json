@@ -1,0 +1,18 @@
+[
+  {
+    "id": "q_eng3_001",
+    "standardId": "ENG-3",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: This cake tastes amazing! Did you make it?\nB: ___________",
+    "choices": {
+      "1": "I'm sorry to hear that.",
+      "2": "Thanks, I'm glad you like it.",
+      "3": "I don't know how to bake.",
+      "4": "It's too expensive.",
+      "5": "I have no idea."
+    },
+    "answer": "2",
+    "explanation": "음식에 대한 칭찬에는 감사와 기쁨을 표현하는 응답이 자연스럽다."
+  }
+]

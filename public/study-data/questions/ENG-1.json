@@ -1,0 +1,18 @@
+[
+  {
+    "id": "q_eng1_001",
+    "standardId": "ENG-1",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Choose the best response for the blank.\n\nA: Hi, I'm Jimin. What's your name?\nB: ___________\nA: Nice to meet you, too!",
+    "choices": {
+      "1": "I'm from Busan.",
+      "2": "I'm Suji. Nice to meet you.",
+      "3": "I like pizza.",
+      "4": "See you later.",
+      "5": "I'm fine, thanks."
+    },
+    "answer": "2",
+    "explanation": "이름을 묻는 질문(What's your name?)에는 자신의 이름을 말하며 인사를 건네는 표현이 이어져야 한다."
+  }
+]
