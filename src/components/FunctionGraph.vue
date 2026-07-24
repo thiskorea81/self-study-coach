@@ -86,6 +86,10 @@ watch(() => props.graph, draw, { deep: true })
 <style scoped>
 .graph {
   display: block;
+  align-self: flex-start;
+  width: 280px;
+  height: 220px;
+  max-width: 100%;
   border: 1px solid #d1d5db;
   border-radius: 6px;
   background: white;
