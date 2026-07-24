@@ -1,0 +1,13 @@
+[
+  { "id": "KOR-1-1", "subject": "국어", "grade": "1-1", "title": "중1 1학기 전 범위" },
+  { "id": "KOR-1-2", "subject": "국어", "grade": "1-2", "title": "중1 2학기 전 범위" },
+  { "id": "KOR-2-1", "subject": "국어", "grade": "2-1", "title": "중2 1학기 전 범위" },
+  { "id": "KOR-2-2", "subject": "국어", "grade": "2-2", "title": "중2 2학기 전 범위" },
+  { "id": "KOR-3-1", "subject": "국어", "grade": "3-1", "title": "중3 1학기 전 범위" },
+  { "id": "ENG-1", "subject": "영어", "grade": "1학년", "title": "중1 전 범위" },
+  { "id": "ENG-2", "subject": "영어", "grade": "2학년", "title": "중2 전 범위" },
+  { "id": "ENG-3", "subject": "영어", "grade": "3학년", "title": "중3 전 범위" },
+  { "id": "MTH-1", "subject": "수학", "grade": "1학년", "title": "중1 전 범위" },
+  { "id": "MTH-2", "subject": "수학", "grade": "2학년", "title": "중2 전 범위" },
+  { "id": "MTH-3", "subject": "수학", "grade": "3학년", "title": "이차방정식까지" }
+]

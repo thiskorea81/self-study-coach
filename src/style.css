@@ -1,0 +1,29 @@
+:root {
+  --bg: #f5f3ee;
+  --ink: #1c2027;
+  --border: #d9d2c1;
+  font: 16px/1.6 -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #11151b;
+    --ink: #e8e6e0;
+    --border: #2a3038;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin: 0 0 8px;
+}
