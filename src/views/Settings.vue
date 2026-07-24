@@ -15,8 +15,10 @@ const name = ref(profile.value?.name ?? '')
 const existing = getAiSettings()
 const provider = ref(existing?.provider ?? 'gemini')
 const apiKey = ref('')
+const model = ref(existing?.model ?? '')
 const savedKeyMasked = ref(existing ? maskKey(existing.apiKey) : null)
 const savedProvider = ref(existing?.provider ?? null)
+const savedModel = ref(existing?.model ?? null)
 
 function saveName() {
   if (!name.value.trim()) return
@@ -26,9 +28,14 @@ function saveName() {
 
 function saveKey() {
   if (!apiKey.value.trim()) return
-  setAiSettings({ provider: provider.value, apiKey: apiKey.value.trim() })
+  setAiSettings({
+    provider: provider.value,
+    apiKey: apiKey.value.trim(),
+    model: model.value.trim() || undefined,
+  })
   savedKeyMasked.value = maskKey(apiKey.value.trim())
   savedProvider.value = provider.value
+  savedModel.value = model.value.trim() || null
   apiKey.value = ''
 }
 
@@ -36,6 +43,7 @@ function removeKey() {
   clearAiSettings()
   savedKeyMasked.value = null
   savedProvider.value = null
+  savedModel.value = null
 }
 </script>
 
@@ -56,6 +64,7 @@ function removeKey() {
       <h2>AI 키</h2>
       <p v-if="savedKeyMasked" class="current">
         현재: {{ savedProvider }} · {{ savedKeyMasked }}
+        <span v-if="savedModel"> · 모델: {{ savedModel }}</span>
         <button class="link" @click="removeKey">삭제</button>
       </p>
       <p v-else class="muted">저장된 키가 없어요.</p>
@@ -69,7 +78,17 @@ function removeKey() {
         <input v-model="apiKey" type="password" placeholder="새 API 키" />
         <button @click="saveKey">저장</button>
       </div>
-      <p class="hint">키는 이 브라우저에만 저장되고, AI 호출 시에만 선택한 Provider로 직접 전송돼요.</p>
+      <input
+        v-model="model"
+        type="text"
+        class="model-input"
+        placeholder="모델 이름 (선택, 비워두면 기본값 사용)"
+      />
+      <p class="hint">
+        키는 이 브라우저에만 저장되고, AI 호출 시에만 선택한 Provider로 직접 전송돼요. AI 회사가
+        모델을 새로 내놓거나 예전 모델을 없애면 호출이 실패할 수 있는데, 그때 여기에 최신 모델
+        이름을 직접 넣어주면 돼요.
+      </p>
     </div>
   </section>
 </template>
@@ -121,5 +140,9 @@ button.link {
   color: #6b7280;
   font-size: 0.82rem;
   margin-top: 6px;
+}
+.model-input {
+  margin-top: 8px;
+  width: 100%;
 }
 </style>

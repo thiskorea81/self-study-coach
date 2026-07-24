@@ -3,7 +3,7 @@ import { canCallAiToday, recordAiCall } from './storage'
 const DEFAULT_MODELS = {
   gemini: 'gemini-2.0-flash',
   openai: 'gpt-4o-mini',
-  claude: 'claude-3-5-haiku-20241022',
+  claude: 'claude-haiku-4-5-20251001',
 }
 
 async function callGemini({ apiKey, model, systemPrompt, userPrompt }) {
@@ -69,7 +69,14 @@ async function describeError(res) {
   if (res.status === 429) {
     return '요청이 너무 많습니다. 잠시 후 다시 시도해 주세요.'
   }
-  return `AI 호출에 실패했습니다 (상태 코드 ${res.status}).`
+  const detail = await res
+    .clone()
+    .json()
+    .then((body) => body.error?.message ?? body.message)
+    .catch(() => null)
+  return detail
+    ? `AI 호출에 실패했습니다 (상태 코드 ${res.status}): ${detail}`
+    : `AI 호출에 실패했습니다 (상태 코드 ${res.status}).`
 }
 
 const CALLERS = { gemini: callGemini, openai: callOpenAi, claude: callClaude }
