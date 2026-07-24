@@ -202,5 +202,209 @@
     },
     "answer": "1",
     "explanation": "다음 학기 계획을 묻는 질문이므로 계획을 말하는 1번이 가장 적절하다."
+  },
+  {
+    "id": "q_eng2_201",
+    "standardId": "ENG-2",
+    "achievementCode": "9영01-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: It's really cold outside. Don't forget your jacket.\nB: Oh, thanks for reminding me.\n\nQuestion: What is A's purpose in this dialogue?",
+    "choices": {
+      "1": "To ask for help",
+      "2": "To give advice about the weather",
+      "3": "To complain about the cold",
+      "4": "To invite B somewhere",
+      "5": "To apologize"
+    },
+    "answer": "2",
+    "explanation": "A는 날씨가 춥다는 것을 알려 주며 재킷을 챙기라고 조언하고 있다."
+  },
+  {
+    "id": "q_eng2_202",
+    "standardId": "ENG-2",
+    "achievementCode": "9영01-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: Would you like to come to my birthday party this Saturday?\nB: Sure, I'd love to!\n\nQuestion: What is A doing?",
+    "choices": {
+      "1": "Inviting B to a party",
+      "2": "Asking for directions",
+      "3": "Giving a warning",
+      "4": "Making a complaint",
+      "5": "Refusing an offer"
+    },
+    "answer": "1",
+    "explanation": "A는 자신의 생일 파티에 B를 초대하고 있다."
+  },
+  {
+    "id": "q_eng2_203",
+    "standardId": "ENG-2",
+    "achievementCode": "9영01-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: Could you help me carry these boxes? They're too heavy for me.\nB: Sure, no problem.\n\nQuestion: What is A's purpose?",
+    "choices": {
+      "1": "To ask for help",
+      "2": "To give a compliment",
+      "3": "To make an apology",
+      "4": "To give directions",
+      "5": "To invite B to lunch"
+    },
+    "answer": "1",
+    "explanation": "A는 상자가 너무 무거워서 도와 달라고 부탁하고 있다."
+  },
+  {
+    "id": "q_eng2_204",
+    "standardId": "ENG-2",
+    "achievementCode": "9영01-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: You should study a little more before the test.\nB: You're right. I'll study harder.\n\nQuestion: What is A doing?",
+    "choices": {
+      "1": "Giving advice",
+      "2": "Making a joke",
+      "3": "Asking a favor",
+      "4": "Complaining about noise",
+      "5": "Introducing a friend"
+    },
+    "answer": "1",
+    "explanation": "A는 시험 전에 조금 더 공부하라고 조언하고 있다."
+  },
+  {
+    "id": "q_eng2_205",
+    "standardId": "ENG-2",
+    "achievementCode": "9영01-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: I'm sorry I broke your pencil. I'll buy you a new one.\nB: It's okay. Don't worry about it.\n\nQuestion: What is A doing?",
+    "choices": {
+      "1": "Apologizing",
+      "2": "Making a request",
+      "3": "Giving directions",
+      "4": "Complaining",
+      "5": "Introducing someone"
+    },
+    "answer": "1",
+    "explanation": "A는 연필을 부러뜨린 것에 대해 사과하고 있다."
+  },
+  {
+    "id": "q_eng2_206",
+    "standardId": "ENG-2",
+    "achievementCode": "9영01-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: Be careful! The floor is wet.\nB: Oh, thank you for telling me.\n\nQuestion: What is A's purpose?",
+    "choices": {
+      "1": "To warn B",
+      "2": "To invite B",
+      "3": "To thank B",
+      "4": "To ask a question",
+      "5": "To sell something"
+    },
+    "answer": "1",
+    "explanation": "A는 바닥이 미끄럽다는 것을 알려 조심하라고 경고하고 있다."
+  },
+  {
+    "id": "q_eng2_207",
+    "standardId": "ENG-2",
+    "achievementCode": "9영01-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: This soup tastes amazing! Did you make it yourself?\nB: Yes, I did.\n\nQuestion: What is A doing?",
+    "choices": {
+      "1": "Giving a compliment about the food",
+      "2": "Complaining about the taste",
+      "3": "Asking B to cook again",
+      "4": "Refusing to eat",
+      "5": "Warning B about the food"
+    },
+    "answer": "1",
+    "explanation": "A는 수프가 맛있다고 칭찬하고 있다."
+  },
+  {
+    "id": "q_eng2_208",
+    "standardId": "ENG-2",
+    "achievementCode": "9영01-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: Could you please turn down the music? I'm trying to study.\nB: Oh, sorry about that.\n\nQuestion: What is A's purpose?",
+    "choices": {
+      "1": "To request B to be quieter",
+      "2": "To invite B to a concert",
+      "3": "To give a compliment",
+      "4": "To apologize",
+      "5": "To sell a product"
+    },
+    "answer": "1",
+    "explanation": "A는 공부하는 데 방해가 되니 음악 소리를 줄여 달라고 요청하고 있다."
+  },
+  {
+    "id": "q_eng2_209",
+    "standardId": "ENG-2",
+    "achievementCode": "9영01-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: I don't think this plan is a good idea. What if it rains?\nB: Good point. Let's think of another plan.\n\nQuestion: What is A doing?",
+    "choices": {
+      "1": "Expressing concern about the plan",
+      "2": "Praising the plan",
+      "3": "Agreeing without question",
+      "4": "Making a joke",
+      "5": "Ignoring the plan"
+    },
+    "answer": "1",
+    "explanation": "A는 비가 올 가능성을 걱정하며 계획에 대한 우려를 표현하고 있다."
+  },
+  {
+    "id": "q_eng2_210",
+    "standardId": "ENG-2",
+    "achievementCode": "9영01-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: Excuse me, could you tell me how to get to the station?\nB: Sure, go straight and turn left.\n\nQuestion: What is A trying to do?",
+    "choices": {
+      "1": "Asking for directions",
+      "2": "Giving a warning",
+      "3": "Making a complaint",
+      "4": "Inviting B somewhere",
+      "5": "Apologizing"
+    },
+    "answer": "1",
+    "explanation": "A는 역까지 가는 길을 묻고 있다."
+  },
+  {
+    "id": "q_eng2_211",
+    "standardId": "ENG-2",
+    "achievementCode": "9영01-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: You did a great job on your presentation today!\nB: Thank you so much!\n\nQuestion: What is A doing?",
+    "choices": {
+      "1": "Praising B",
+      "2": "Criticizing B",
+      "3": "Asking B for help",
+      "4": "Warning B",
+      "5": "Inviting B"
+    },
+    "answer": "1",
+    "explanation": "A는 B의 발표를 잘했다고 칭찬하고 있다."
+  },
+  {
+    "id": "q_eng2_212",
+    "standardId": "ENG-2",
+    "achievementCode": "9영01-06",
+    "subject": "영어",
+    "type": "5지선다형",
+    "question": "Read the dialogue and answer the question.\n\nA: I keep hearing a strange noise from your room every night. Can you check it?\nB: I'll look into it right away.\n\nQuestion: What is A's purpose?",
+    "choices": {
+      "1": "To ask B to check a problem",
+      "2": "To invite B to a party",
+      "3": "To give a compliment",
+      "4": "To apologize",
+      "5": "To sell something"
+    },
+    "answer": "1",
+    "explanation": "A는 이상한 소리가 나니 확인해 달라고 요청하고 있다."
   }
 ]
